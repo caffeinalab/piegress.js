@@ -7,7 +7,7 @@
     $.Piegress = function(element, options) {
         var defaults = {
             color: '#000',
-            size: '50',
+            size: 50,
             speed: 8,
             value: 0
         }
