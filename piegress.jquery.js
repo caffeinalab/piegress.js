@@ -1,11 +1,10 @@
 // Piegress jQuery Plugin
 // version 1.0.0
 // by Caffeina - http://caffeina.co
+// https://github.com/CaffeinaLab/piegress.js
 
 (function($) {
-
     $.Piegress = function(element, options) {
-
         var defaults = {
             color: '#000',
             size: '50',
@@ -14,13 +13,11 @@
         }
 
         var plugin = this;
-
         plugin.settings = {}
 
         var $element = $(element),
              element = element;
-
-      
+             
         var setValueforLoader = function(perc,$element){
           angle = Math.min(99.999,Math.max(0,perc||0)) * 3.6;
           var r = ( angle * Math.PI / 180 )
@@ -68,15 +65,11 @@
     }
 
     $.fn.Piegress = function(options) {
-
         return this.each(function() {
             if (undefined == $(this).data('Piegress')) {
                 var plugin = new $.Piegress(this, options);
                 $(this).data('Piegress', plugin);
             }
         });
-
     }
-
-    
 })(jQuery);
