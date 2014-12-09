@@ -48,3 +48,9 @@ Progress is in range 0-100
 ```javascript
 $(".loader").data('Piegress').setProgress(100 * Math.random());
 ```
+
+## Copyright and license
+
+Copyright 2014 [Caffeina](http://caffeina.co) srl under the [MIT license](LICENSE.md).
+
+<p align="center"><a href="http://caffeina.co" target="_blank" title="Caffeina - Ideas Never Sleep"><img src="https://github.com/CaffeinaLab/BrandResources/blob/master/caffeina-handmade.png?raw=true" align="center" height="65"></a></p>
