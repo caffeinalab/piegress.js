@@ -1,6 +1,7 @@
 // Piegress jQuery Plugin
 // version 1.0.0
 // by Caffeina - http://caffeina.co
+// https://github.com/CaffeinaLab/piegress
 
 (function($) {
 
@@ -45,7 +46,7 @@
         };     
       
         plugin.setProgress = function(value) {
-            setValueforLoaderAnimated(value);
+            setValueforLoaderAnimated(value,$element);
         }
       
         plugin.init = function() {
