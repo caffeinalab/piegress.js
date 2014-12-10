@@ -3,9 +3,17 @@
 
 A jQuery plugin for drawing small pie progress indicators
 
-
 ### Demo
+
 https://codepen.io/lastguest/pen/qEbQpG
+
+### Install
+
+Use bower:
+
+```bash
+$ bower install piegress
+```
 
 ### Options
 
