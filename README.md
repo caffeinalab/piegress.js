@@ -1,9 +1,8 @@
-Piegress.js
+<img width="100" src="http://f.cl.ly/items/2f2R3e1s290h2f0g0J0c/example.png"> Piegress.js
 ========
 
 A jQuery plugin for drawing small pie progress indicators
 
-<img src="https://raw.githubusercontent.com/CaffeinaLab/piegress.js/master/example.svg">
 
 ### Demo
 https://codepen.io/lastguest/pen/qEbQpG
