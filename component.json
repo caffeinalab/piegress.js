@@ -1,0 +1,16 @@
+{
+  "name": "piegress",
+  "repo": "CaffeinaLab/piegress",
+  "description": "A small pie progress indicator",
+  "version": "1.0.0",
+  "keywords": ["progress","jquery","plugin","pie","svg","gauge"],
+  "dependencies": {
+    "jquery": ">=1.2"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "piegress.jquery.js",
+  "scripts": [
+    "piegress.jquery.js"
+  ]
+}
