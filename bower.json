@@ -1,0 +1,15 @@
+{
+  "name": "piegress",
+  "version": "1.0.0",
+  "main": [
+    "piegress.jquery.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.2"
+  },
+  "ignore": [
+    ".*",
+    "*.json",
+    "*.md"
+  ]
+}
