@@ -8,6 +8,7 @@
         var defaults = {
             color: '#000',
             size: 50,
+            border: 20,
             speed: 8,
             value: 0
         }
@@ -39,8 +40,10 @@
             ?
               $element.data('curr_value',$element.data('curr_value')+1)
             :
-              $element.data('curr_value',$element.data('curr_value')-1);            setValueforLoader($element.data('curr_value'), $element);
-            if ($element.data('curr_value')!=$element.data('value')) setTimeout(draw, plugin.settings.speed);
+              $element.data('curr_value',$element.data('curr_value')-1); 
+            setValueforLoader($element.data('curr_value'), $element);
+            if ($element.data('curr_value')!=$element.data('value'))
+               setTimeout(draw, plugin.settings.speed);
           };
           draw();
         };     
@@ -51,12 +54,13 @@
       
         plugin.init = function() {
             plugin.settings = $.extend({}, defaults, {
-              color:$element.data('color'),
-              size:$element.data('size'),
-              speed:$element.data('speed'),
-              value:$element.data('value')
+              color:    $element.data('color'),
+              size:     $element.data('size'),
+              speed:    $element.data('speed'),
+              border:   $element.data('border'),
+              value:    $element.data('value')
             }, options);
-            $element.html('<svg class="loader" style="display:inline-block" width="'+plugin.settings.size+'" height="'+plugin.settings.size+'" viewbox="0 0 250 250"><circle id="b" cx="125" cy="125" r="115" stroke="'+plugin.settings.color+'" stroke-width="20" fill="none" /><path id="f" transform="translate(125, 125) scale(.84)" fill="'+plugin.settings.color+'" opacity="0.5"/></svg>');
+            $element.html('<svg class="loader" style="display:inline-block" width="'+plugin.settings.size+'" height="'+plugin.settings.size+'" viewbox="0 0 250 250"><circle id="b" cx="125" cy="125" r="115" stroke="'+plugin.settings.color+'" stroke-width="'+plugin.settings.border+'" fill="none" /><path id="f" transform="translate(125, 125) scale(.84)" fill="'+plugin.settings.color+'" opacity="0.5"/></svg>');
             $element.data('value',plugin.settings.value);
             $element.data('curr_value',0);
             $(function(){setValueforLoaderAnimated(plugin.settings.value, $element, 1);});
