@@ -3,6 +3,8 @@ Piegress.js
 
 A jQuery plugin for drawing small pie progress indicators
 
+<img src="example.svg">
+
 ### Demo
 https://codepen.io/lastguest/pen/qEbQpG
 
